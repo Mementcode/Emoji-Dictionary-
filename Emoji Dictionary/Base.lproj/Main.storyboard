@@ -73,5 +73,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="UFq-36-YsR">
+            <objects>
+                <viewController id="47d-jS-EPZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D6W-Wp-prZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="JuU-Pd-Mst"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qyq-Xk-8LT">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSi-hj-qNU">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="200"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jSi-hj-qNU" firstAttribute="top" secondItem="D6W-Wp-prZ" secondAttribute="bottom" constant="40" id="0cl-bO-OGh"/>
+                            <constraint firstItem="jSi-hj-qNU" firstAttribute="centerX" secondItem="qyq-Xk-8LT" secondAttribute="centerX" id="s4s-q4-onc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jSi-hj-qNU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0cl-bO-OGh"/>
+                                <exclude reference="s4s-q4-onc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jSi-hj-qNU"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0cl-bO-OGh"/>
+                                <include reference="s4s-q4-onc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6h-1g-wtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="874.5" y="136"/>
+        </scene>
     </scenes>
 </document>
