@@ -30,24 +30,35 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Dictionary " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcj-cy-d8B" userLabel="Emoji Dictionary">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.43462976813316345" blue="0.6137281060218811" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9E0-PY-fNJ" secondAttribute="bottom" id="7tx-bE-cc7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9E0-PY-fNJ" secondAttribute="trailing" id="Hl3-co-ESL"/>
-                            <constraint firstItem="9E0-PY-fNJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eoC-Oz-Bar"/>
+                            <constraint firstItem="pcj-cy-d8B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IPe-0Q-cLE"/>
+                            <constraint firstItem="pcj-cy-d8B" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="80" id="RIU-E9-6yl"/>
+                            <constraint firstItem="9E0-PY-fNJ" firstAttribute="top" secondItem="pcj-cy-d8B" secondAttribute="bottom" constant="10" id="a5r-ta-3sh"/>
                             <constraint firstItem="9E0-PY-fNJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gbZ-pL-Dpv"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ODe-i3-2sR"/>
                                 <exclude reference="9E0-PY-fNJ"/>
+                                <exclude reference="pcj-cy-d8B"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="7tx-bE-cc7"/>
+                                <exclude reference="IPe-0Q-cLE"/>
+                                <exclude reference="RIU-E9-6yl"/>
                                 <exclude reference="Hl3-co-ESL"/>
-                                <exclude reference="eoC-Oz-Bar"/>
+                                <exclude reference="a5r-ta-3sh"/>
                                 <exclude reference="gbZ-pL-Dpv"/>
+                                <exclude reference="7tx-bE-cc7"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -58,12 +69,15 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="9E0-PY-fNJ"/>
+                                <include reference="pcj-cy-d8B"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="7tx-bE-cc7"/>
+                                <include reference="IPe-0Q-cLE"/>
+                                <include reference="RIU-E9-6yl"/>
                                 <include reference="Hl3-co-ESL"/>
-                                <include reference="eoC-Oz-Bar"/>
+                                <include reference="a5r-ta-3sh"/>
                                 <include reference="gbZ-pL-Dpv"/>
+                                <include reference="7tx-bE-cc7"/>
                             </mask>
                         </variation>
                     </view>
