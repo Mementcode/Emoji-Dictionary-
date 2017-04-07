@@ -11,13 +11,15 @@ import UIKit
 class DefinitionViewController: UIViewController {
     
     @IBOutlet weak var definitionLabel: UILabel!
+    
     @IBOutlet weak var emojiLabel: UILabel!
-    var emoji = "NO EMOJI"
+    
+    var emoji = "NO EMOJI" // sets the var emoji to = a String (if any emojis arent in the if statment the output will be "NO EMOJI" 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // below is a list of "if" statments that say if the emoji = X passes through the var emoji then change the outlet definitionLabel.(text) to a given String (or description)
         
         emojiLabel.text = emoji
         
