@@ -10,61 +10,24 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
+    @IBOutlet weak var category: UILabel!
+    @IBOutlet weak var birthYear: UILabel!
     @IBOutlet weak var definitionLabel: UILabel!
     
     @IBOutlet weak var emojiLabel: UILabel!
     
-    var emoji = "NO EMOJI" // sets the var emoji to = a String (if any emojis arent in the if statment the output will be "NO EMOJI" 
+    var emoji = Emoji() // sets the var emoji to = the Class Emoji
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // below is a list of "if" statments that say if the emoji = X passes through the var emoji then change the outlet definitionLabel.(text) to a given String (or description)
+        // below is how I have implemented the created class Emoji with all its objects and I am able to adjust the input for each object.text depending on the infomation coming from func MakeEmojiArry.
         
-        emojiLabel.text = emoji
+        emojiLabel.text = emoji.symbol
         
-        if emoji == "😀" {
-        definitionLabel.text = "Smiling cheesy face"
-            
-        }
-        if emoji == "😋" {
-            definitionLabel.text = "Face with tongue out "
-            
-        }
-        if emoji == "😍" {
-            definitionLabel.text = "smiling face with heart-shaped eyes"
-            
-        }
-        if emoji == "🖕🏻" {
-            definitionLabel.text = "Middle finger"
-            
-        }
-        if emoji == "🦁" {
-            definitionLabel.text = "Lion Face"
-            
-        }
-        if emoji == "🌕" {
-            definitionLabel.text = "Full moon"
-            
-        }
-        if emoji == "🎈" {
-            definitionLabel.text = "Red balloon"
-            
-        }
-        if emoji == "☺️" {
-            definitionLabel.text = "Smiley happy face"
-        
-            
-        }
-        if emoji == "😖" {
-            definitionLabel.text = "Confonded face"
-            
-        }
-        if emoji == "😻" {
-            definitionLabel.text = "Smiling cat face with heart-shaped eyes"
-            
-        }
-        
+        birthYear.text = "BirthYear: \(emoji.birthYear)"
+        category.text = "Category: \(emoji.category)"
+        definitionLabel.text = emoji.defintion
         
     }
 
