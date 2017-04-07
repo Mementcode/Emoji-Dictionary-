@@ -27,7 +27,7 @@ class DefinitionViewController: UIViewController {
         
         birthYear.text = "BirthYear: \(emoji.birthYear)"
         category.text = "Category: \(emoji.category)"
-        definitionLabel.text = emoji.defintion
+        definitionLabel.text = "Description: \(emoji.defintion)"
         
     }
 
