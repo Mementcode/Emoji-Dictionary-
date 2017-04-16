@@ -77,7 +77,7 @@ class ViewController: UIViewController, UITableViewDataSource , UITableViewDeleg
         emoji2 .symbol = "😋"
         emoji2 .birthYear = 2012
         emoji2 .category = "Smiley"
-        emoji2 .defintion = "Smiling cheesy face"
+        emoji2 .defintion = "smiley face with tongue out"
         
         let emoji3 = Emoji()
         
